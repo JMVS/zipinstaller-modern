@@ -213,4 +213,4 @@ zim.dist/
 
 # Compiled executable (keep release versions only)
 *.exe
-!ZIM.exe
+#!ZIM.exe
