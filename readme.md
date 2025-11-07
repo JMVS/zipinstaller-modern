@@ -38,8 +38,8 @@ Supports Windows 10/11.
 
 ### Installation
 
-1. **Download** the latest release from [Releases](https://github.com/yourusername/zipinstaller-modern/releases)
-2. **Run** `ZIM.exe` (no installation required)
+1. **Download** the latest release from [Releases](https://github.com/JMVS/zipinstaller-modern/releases)
+2. **Run** `ZIM.exe` (portable, no installation required)
 3. **Optional**: Install ZIM itself via the menu (☰) → "Install ZipInstaller Modern in the system"
 
 ### Usage
@@ -87,10 +87,13 @@ pip install -r requirements.txt
 ### Compilation
 
 ```bash
-# Using Nuitka (recommended)
+# Using build.py (recommended)
+build.py
+
+# Using Nuitka
 nuitka --standalone --onefile --windows-console-mode=disable \
        --enable-plugin=pyside6 --msvc=latest \
-       --file-version=1.0.0.0 --windows-icon-from-ico=zim.ico \
+       --file-version=x.x.x.x --windows-icon-from-ico=zim.ico \
        --include-data-dir=locales=locales \
        --lto=yes --include-qt-plugins=sensible \
        --noinclude-qt-translations zim.py
@@ -119,19 +122,24 @@ ZIM uses **Babel** for internationalization. Currently supported languages:
 
 1. Extract translatable strings:
 ```bash
-pybabel extract -o messages.pot zim.py
+translations.py extract
 ```
 
-2. Create translation for new language (e.g., French):
+2. a) Create translation for new language (e.g., French):
 ```bash
-pybabel init -i messages.pot -d locales -l fr
+translations.py init fr
+```
+
+2. b) Update translation for existing language (e.g., Spanish):
+```bash
+translations.py update es
 ```
 
 3. Edit `locales/fr/LC_MESSAGES/messages.po`
 
 4. Compile translations:
 ```bash
-pybabel compile -d locales
+translations.py compile
 ```
 
 ## 📋 Technical Details
@@ -230,7 +238,7 @@ This software is provided "AS IS" without warranty of any kind. Use at your own 
 
 **Author**: VM/Studio
 
-**Issues**: [GitHub Issues](https://github.com/yourusername/zipinstaller-modern/issues)
+**Issues**: [GitHub Issues](https://github.com/JMVS/zipinstaller-modern/issues)
 
 ---
 
