@@ -207,6 +207,8 @@ marimo/_lsp/
 __marimo__/
 
 # ==================== PROJECT SPECIFIC ====================
+version.json
+
 # Compiled executable (keep release versions only)
 *.exe
 !ZIM.exe

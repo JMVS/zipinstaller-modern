@@ -1,7 +1,7 @@
-# Spanish translations for PROJECT.
-# Copyright (C) 2025 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# Spanish translations for ZipInstaller Modern.
+# Copyright (C) 2025 José Vera
+# This file is distributed under the same license as the ZipInstaller Modern project.
+# José Vera <jose.veramutka@gmail.com>, 2025.
 #
 msgid ""
 msgstr ""
@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-11-05 21:52-0300\n"
 "PO-Revision-Date: 2025-11-05 18:19-0300\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: José Vera <jose.veramutka@gmail.com>\n"
 "Language: es\n"
 "Language-Team: es <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -158,7 +158,7 @@ msgstr "Información de la aplicación"
 #: zim.py:773
 #, python-brace-format
 msgid "<b>Version:</b> {version}<br>"
-msgstr ""
+msgstr "<b>Versión:</b> {version}<br>"
 
 #: zim.py:775
 #, python-brace-format

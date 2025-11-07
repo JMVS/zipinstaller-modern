@@ -81,6 +81,7 @@ pip install -r requirements.txt
 - **pywin32** (Windows integration) - PSF License
 - **pefile** (Executable metadata) - MIT License
 - **pyshortcuts** (Shortcut creation) - MIT License
+- **Babel** (Internationalization) - BSD License
 - **Nuitka** (Python compiler) - Apache 2.0
 
 ### Compilation

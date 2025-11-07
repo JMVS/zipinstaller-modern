@@ -1,0 +1,556 @@
+# Spanish translations for ZipInstaller Modern.
+# Copyright (C) 2025 José Vera
+# This file is distributed under the same license as the ZipInstaller Modern project.
+# José Vera <jose.veramutka@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-11-05 21:52-0300\n"
+"PO-Revision-Date: 2025-11-05 18:19-0300\n"
+"Last-Translator: José Vera <jose.veramutka@gmail.com>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: zim.py:28
+msgid "Error"
+msgstr "Error"
+
+#: zim.py:29
+msgid "Warning"
+msgstr "Atención"
+
+#: zim.py:41
+msgid "pywin32 is not installed. Shortcuts will not work."
+msgstr "pywin32 no está instalado. Los accesos directos no funcionarán."
+
+#: zim.py:49
+msgid "pefile is not installed. Executable metadata reading will not work."
+msgstr "pefile no está instalado. No se podrán leer metadatos de ejecutables."
+
+#: zim.py:57
+msgid "pyshortcuts is not installed. Will use win32com for shortcuts."
+msgstr "pyshortcuts no está instalado. Se usará win32com para accesos directos."
+
+#: zim.py:69
+msgid "Yes"
+msgstr "Sí"
+
+#: zim.py:70
+msgid "No"
+msgstr "No"
+
+#: zim.py:229
+#, python-brace-format
+msgid "Error reading ZIP: {error}"
+msgstr "Error leyendo ZIP: {error}"
+
+#: zim.py:286
+#, python-brace-format
+msgid "Error reading executable metadata: {error}"
+msgstr "Error leyendo metadatos del ejecutable: {error}"
+
+#: zim.py:329
+#, python-brace-format
+msgid "Error creating shortcut with win32com: {error}"
+msgstr "Error creando acceso directo con win32com: {error}"
+
+#: zim.py:350
+#, python-brace-format
+msgid "Error creating shortcut with pyshortcuts: {error}"
+msgstr "Error creando acceso directo con pyshortcuts: {error}"
+
+#: zim.py:395
+msgid "Install with ZIM..."
+msgstr "Instalar con ZIM..."
+
+#: zim.py:429
+#, python-brace-format
+msgid "Error registering in {progid}: {error}"
+msgstr "Error registrando en {progid}: {error}"
+
+#: zim.py:453
+#, python-brace-format
+msgid "Generic fallback error: {error}"
+msgstr "Error en fallback universal: {error}"
+
+#: zim.py:458
+#, python-brace-format
+msgid "Error registering context menu: {error}"
+msgstr "Error registrando menú contextual: {error}"
+
+#: zim.py:517
+#, python-brace-format
+msgid "Error unregistering context menu: {error}"
+msgstr "Error eliminando menú contextual: {error}"
+
+#: zim.py:537
+msgid "Extracting files..."
+msgstr "Extrayendo archivos..."
+
+#: zim.py:580
+msgid "Creating uninstaller..."
+msgstr "Creando desinstalador..."
+
+#: zim.py:589
+msgid "Compiling installation info..."
+msgstr "Creando información de instalación..."
+
+#: zim.py:616
+#, python-brace-format
+msgid "The executable {exec} does not exist in the ZIP"
+msgstr "El ejecutable {self.config['executable']} no existe en el ZIP"
+
+#: zim.py:626
+msgid "Creating Desktop shortcut..."
+msgstr "Creando acceso directo en escritorio..."
+
+#: zim.py:638
+#, python-brace-format
+msgid "Could not create Desktop shortcut: {error}"
+msgstr "No se pudo crear acceso directo en escritorio: {error}"
+
+#: zim.py:643
+msgid "Creating Start Menu shortcut..."
+msgstr "Creando acceso directo en menú inicio..."
+
+#: zim.py:655
+#, python-brace-format
+msgid "Could not create Start Menu shortcut: {error}"
+msgstr "No se pudo crear acceso directo en menú inicio: {error}"
+
+#: zim.py:659
+msgid "Registering in system..."
+msgstr "Registrando en el sistema..."
+
+#: zim.py:663
+msgid "Installation complete!"
+msgstr "¡Instalación completada!"
+
+#: zim.py:706
+#, python-brace-format
+msgid "Could not create Registry entry: {error}"
+msgstr "No se pudo crear la entrada del registro: {error}"
+
+#: zim.py:733
+msgid "Installation information file not found!"
+msgstr "No se encontró el archivo de información de instalación"
+
+#: zim.py:735
+msgid "Search path: "
+msgstr "Buscado en: "
+
+#: zim.py:753
+#, python-brace-format
+msgid "Uninstall {name}"
+msgstr "Desinstalar {name}"
+
+#: zim.py:769
+msgid "App Info"
+msgstr "Información de la aplicación"
+
+#: zim.py:773
+#, python-brace-format
+msgid "<b>Version:</b> {version}<br>"
+msgstr "<b>Versión:</b> {version}<br>"
+
+#: zim.py:775
+#, python-brace-format
+msgid "<b>Installed:</b> {install_date}<br>"
+msgstr "<b>Instalado:</b> {install_date}<br>"
+
+#: zim.py:777
+#, python-brace-format
+msgid "<b>Location:</b> {install_dir}"
+msgstr "<b>Ubicación:</b> {install_dir}"
+
+#: zim.py:791
+msgid "This action cannot be undone"
+msgstr "Esta acción no se puede deshacer"
+
+#: zim.py:798
+#, python-brace-format
+msgid "Additional files detected ({count_files})"
+msgstr "Archivos adicionales detectados ({count_files})"
+
+#: zim.py:802
+msgid ""
+"These files were not part of the original installation (settings, saved "
+"data, etc):"
+msgstr ""
+"Estos archivos no estaban en la instalación original (configuración, "
+"datos guardados, etc):"
+
+#: zim.py:813
+#, python-brace-format
+msgid "... and {count_additional_files} more files"
+msgstr "... y {count_additional_files} archivos más"
+
+#: zim.py:817
+msgid "Delete additional files too"
+msgstr "Eliminar también archivos adicionales"
+
+#: zim.py:831
+msgid "Uninstall"
+msgstr "Desinstalar"
+
+#: zim.py:849
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: zim.py:956
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: zim.py:957
+#, python-brace-format
+msgid "Confirm uninstall of {name}?"
+msgstr "¿Confirmar desinstalación de {name}?"
+
+#: zim.py:980
+#, python-brace-format
+msgid "Could not delete {item_error}: {error}"
+msgstr "No se pudo eliminar {item_error}: {error}"
+
+#: zim.py:998
+#, python-brace-format
+msgid "Could not delete {full_path_error}: {error}"
+msgstr "No se pudo eliminar {full_path_error}: {error}"
+
+#: zim.py:1009 zim.py:1032
+#, python-brace-format
+msgid "{name} uninstalled successfully"
+msgstr "{name} desinstalado correctamente"
+
+#: zim.py:1011 zim.py:1034
+#, python-brace-format
+msgid "{total_files_deleted} files deleted"
+msgstr "{total_files_deleted} archivos eliminados"
+
+#: zim.py:1015
+msgid ""
+"The uninstaller and remaining files will be deleted automatically when "
+"closing this window."
+msgstr ""
+"El desinstalador y archivos restantes se eliminarán automáticamente al "
+"cerrar esta ventana."
+
+#: zim.py:1018 zim.py:1035
+msgid "Uninstall Complete"
+msgstr "Desinstalación completada"
+
+#: zim.py:1040
+msgid "Error during uninstallation:"
+msgstr "Error durante la desinstalación:"
+
+#: zim.py:1069
+#, fuzzy, python-brace-format
+msgid "Could not delete registry entry: {error}"
+msgstr "No se pudo crear la entrada del registro: {error}"
+
+#: zim.py:1080
+msgid "About"
+msgstr "Acerca"
+
+#: zim.py:1092
+#, python-brace-format
+msgid "Version {version}"
+msgstr "Versión {version}"
+
+#: zim.py:1097
+msgid "Developed by"
+msgstr "Desarrollado por"
+
+#: zim.py:1103
+msgid ""
+"Installs and uninstalls applications and utilities that do not provide an"
+" internal installation program"
+msgstr "Instalador portable de aplicaciones desde archivos ZIP"
+
+#: zim.py:1111
+msgid "Licenses and Components"
+msgstr "Licencias y componentes"
+
+#: zim.py:1119
+msgid "License"
+msgstr "Licencia"
+
+#: zim.py:1120
+msgid "View GPLv3 license"
+msgstr "Ver licencia GPLv3"
+
+#: zim.py:1121
+msgid "Components used"
+msgstr "Componentes utilizados:"
+
+#: zim.py:1122
+msgid "About GPLv3"
+msgstr "Sobre GPLv3:"
+
+#: zim.py:1124
+msgid ""
+"This program is free software: you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the "
+"Free Software Foundation, either version 3 of the License, or (at your "
+"option) any later version."
+msgstr ""
+"Este programa es software libre: puede redistribuirlo y/o modificarlo "
+"bajo los términos de la Licencia Pública General GNU publicada por la "
+"Free Software Foundation, ya sea la versión 3 de la Licencia, o (a su "
+"elección) cualquier versión posterior."
+
+#: zim.py:1130
+msgid ""
+"This program is distributed in the hope that it will be useful, but "
+"WITHOUT ANY WARRANTY; without even the implied warranty of "
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General "
+"Public License for more details."
+msgstr ""
+"Este programa se distribuye con la esperanza de que sea útil, pero SIN "
+"NINGUNA GARANTÍA; sin siquiera la garantía implícita de COMERCIABILIDAD o"
+" IDONEIDAD PARA UN PROPÓSITO PARTICULAR. Consulte la Licencia Pública "
+"General GNU para obtener más detalles."
+
+#: zim.py:1138
+msgid "GUI framework"
+msgstr "Framework de interfaz gráfica"
+
+#: zim.py:1139
+msgid "Windows extensions for Python"
+msgstr "Extensiones de Windows para Python"
+
+#: zim.py:1140
+msgid "Windows PE file parser"
+msgstr "Análisis de archivos PE (ejecutables de Windows)"
+
+#: zim.py:1141
+msgid "Cross-platform desktop shortcut creation"
+msgstr "Creación de accesos directos multiplataforma"
+
+#: zim.py:1142
+msgid "Python compiler"
+msgstr "Compilador de Python"
+
+#: zim.py:1236
+msgid "Close"
+msgstr "Cerrar"
+
+#: zim.py:1332
+msgid "Portable application installer from ZIP files"
+msgstr "Instalador portable de aplicaciones desde archivos ZIP"
+
+#: zim.py:1378
+#, python-brace-format
+msgid "Update {app} (v{vOld} → v{vNew})"
+msgstr "Actualizar {app} (v{vOld} → v{vNew})"
+
+#: zim.py:1384
+#, python-brace-format
+msgid "Uninstall {app_name}..."
+msgstr "Desinstalar {app_name}..."
+
+#: zim.py:1388
+#, python-brace-format
+msgid "Install {app_name} in the system"
+msgstr "Instalar {app_name} en el sistema"
+
+#: zim.py:1394
+msgid "About..."
+msgstr "Acerca de..."
+
+#: zim.py:1404
+msgid "Not available"
+msgstr "No disponible"
+
+#: zim.py:1405
+msgid "Self install is only available in the compiled version."
+msgstr "La instalación propia solo está disponible en la versión compilada."
+
+#: zim.py:1412
+#, python-brace-format
+msgid "Install {app_name}"
+msgstr "Instalar {app_name}"
+
+#: zim.py:1413
+#, python-brace-format
+msgid "Do you want to install {app_name} on your system?"
+msgstr "¿Desea instalar {app_name} en su sistema?"
+
+#: zim.py:1413
+msgid "This will allow running it from the Start Menu."
+msgstr "Esto permitirá ejecutarlo desde el Menú Inicio."
+
+#: zim.py:1491
+msgid "Installation completed"
+msgstr "Instalación finalizada"
+
+#: zim.py:1493
+#, python-brace-format
+msgid "{app_name} installed successfully"
+msgstr "{app_name} instalada correctamente"
+
+#: zim.py:1495
+msgid "You can now run it from the Start Menu."
+msgstr "Ahora puede ejecutarlo desde el Menú Inicio."
+
+#: zim.py:1502 zim.py:1551 zim.py:1998
+msgid "Error during installation:"
+msgstr "Error durante la instalación:"
+
+#: zim.py:1510
+#, python-brace-format
+msgid "Uninstall {app_name}"
+msgstr "Desinstalar {app_name}"
+
+#: zim.py:1511
+#, python-brace-format
+msgid "Do you want to uninstall {app_name} from this system?"
+msgstr "¿Desea desinstalar {app_name} del sistema?"
+
+#: zim.py:1545
+msgid "Uninstall completed"
+msgstr "Desinstalación finalizada"
+
+#: zim.py:1546
+#, python-brace-format
+msgid "{app_name} uninstalled successfully"
+msgstr "{app_name} desinstalado correctamente"
+
+#: zim.py:1561
+msgid "Install New Application"
+msgstr "Instalar nueva aplicación"
+
+#: zim.py:1567 zim.py:1811
+msgid "Select ZIP file"
+msgstr "Seleccionar archivo ZIP"
+
+#: zim.py:1571
+msgid "Select a ZIP file..."
+msgstr "Seleciconar un archivo ZIP..."
+
+#: zim.py:1576
+msgid "Browse"
+msgstr "Examinar"
+
+#: zim.py:1583
+msgid "Configuration"
+msgstr "Configuración"
+
+#: zim.py:1587
+msgid "Name:"
+msgstr "Nombre:"
+
+#: zim.py:1590
+msgid "Application name"
+msgstr "Nombre de la aplicación"
+
+#: zim.py:1596
+msgid "Version:"
+msgstr "Versión:"
+
+#: zim.py:1599
+msgid "Will be auto-detected"
+msgstr "Se detectará automáticamente"
+
+#: zim.py:1609
+msgid "Install in:"
+msgstr "Instalar en:"
+
+#: zim.py:1622
+msgid "Executable:"
+msgstr "Ejecutable:"
+
+#: zim.py:1630
+msgid "Create Desktop shortcut"
+msgstr "Crear acceso directo en el escritorio"
+
+#: zim.py:1635
+msgid "Create Start Menu shortcut"
+msgstr "Crear acceso directo en el menú inicio"
+
+#: zim.py:1650
+msgid "INSTALL"
+msgstr "INSTALAR"
+
+#: zim.py:1811
+msgid "ZIP Files (*.zip)"
+msgstr "Archivos ZIP (*.zip)"
+
+#: zim.py:1866
+#, python-brace-format
+msgid "Found: {first_exe}"
+msgstr "Encontrado: {first_exe}"
+
+#: zim.py:1869
+#, python-brace-format
+msgid " (in {root_dir}/)"
+msgstr " (en {root_dir}/)"
+
+#: zim.py:1878
+#, python-brace-format
+msgid "Error reading metadata: {error}"
+msgstr "Error leyendo metadatos: {error}"
+
+#: zim.py:1886
+#, python-brace-format
+msgid "Found: {first_exe} (no metadata)"
+msgstr "Encontrado: {first_exe} (sin metadatos)"
+
+#: zim.py:1896
+msgid "No executables found in ZIP's root folder"
+msgstr "No se encontraron ejecutables en la raíz del ZIP"
+
+#: zim.py:1902
+msgid "Select installation directory"
+msgstr "Seleccionar carpeta de instalación"
+
+#: zim.py:1970
+#, python-brace-format
+msgid "{display_name} installed sucessfully"
+msgstr "{display_name} instalado correctamente"
+
+#: zim.py:1972
+#, python-brace-format
+msgid "Location: {message}"
+msgstr "Ubicación: {message}"
+
+#: zim.py:1974
+msgid "The app will show in:"
+msgstr "La aplicación aparecerá en:"
+
+#: zim.py:1976
+msgid "Windows Configuration → Apps"
+msgstr "Configuración de Windows → Aplicaciones"
+
+#: zim.py:1978
+msgid "Control Panel → Programs"
+msgstr "Panel de Control → Programas"
+
+#: zim.py:1980
+msgid "To uninstall:"
+msgstr "Para desinstalar:"
+
+#: zim.py:1982
+msgid "From Windows Configuration, or"
+msgstr "Desde Configuración de Windows, o"
+
+#: zim.py:1984
+msgid "Running uninstall.exe from installation folder"
+msgstr "Ejecutando uninstall.exe en la carpeta de instalación"
+
+#: zim.py:1986
+msgid "Installation Finished"
+msgstr "Instalación finalizada"
+
+#~ msgid "Loaded Qt translations for: {locale}"
+#~ msgstr "Se cargaron las traducciones Qt para: {locale}"
+
+#~ msgid "Loaded Qt dialog translations for: {locale}"
+#~ msgstr "Se cargaron las traducciones de diálogo Qt para: {locale}"
+

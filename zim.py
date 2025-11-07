@@ -1323,6 +1323,7 @@ class AboutDialog(QDialog):
             ("pywin32", _("Windows extensions for Python"), "PSF License", "https://github.com/mhammond/pywin32"),
             ("pefile", _("Windows PE file parser"), "MIT License", "https://github.com/erocarrera/pefile"),
             ("pyshortcuts", _("Cross-platform desktop shortcut creation"), "MIT License", "https://github.com/newville/pyshortcuts"),
+            ("Babel", _("Internationalization library"), "BSD License", "https://babel.pocoo.org/"),
             ("Nuitka", _("Python compiler"), "Apache 2.0", "https://nuitka.net/"),
         ]
 
