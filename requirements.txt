@@ -1,0 +1,23 @@
+# ZipInstaller Modern - Python Dependencies
+# Python 3.12+ required
+
+# GUI Framework (Qt for Python)
+PySide6>=6.6.0
+
+# Windows Integration (shortcuts, COM objects)
+pywin32>=306
+
+# Executable metadata parsing
+pefile>=2023.2.7
+
+# Cross-platform shortcut creation (optional fallback)
+pyshortcuts>=1.9.1
+
+# Internationalization (translations)
+Babel>=2.13.0
+
+# Build dependencies (only needed for compilation)
+# Uncomment if building from source:
+# nuitka>=1.9.0
+# ordered-set>=4.1.0
+# zstandard>=0.22.0
