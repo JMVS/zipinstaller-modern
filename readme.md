@@ -83,12 +83,8 @@ pip install -r requirements.txt
 
 ```bash
 # Using Nuitka (recommended)
-python build.py
-
-# Manual Nuitka command
 nuitka --standalone --onefile --windows-console-mode=disable \
        --enable-plugin=pyside6 --msvc=latest \
-       --company-name="VM/Studio" --product-name="ZipInstaller Modern" \
        --file-version=1.0.0.0 --windows-icon-from-ico=zim.ico \
        --include-data-dir=locales=locales \
        --lto=yes --include-qt-plugins=sensible \
@@ -100,13 +96,10 @@ nuitka --standalone --onefile --windows-console-mode=disable \
 ```
 zipinstaller-modern/
 ├── zim.py              # Main application code
-├── version.py          # Version information
 ├── zim.ico             # Application icon
 ├── locales/            # Translation files
-│   ├── en/LC_MESSAGES/
-│   └── es/LC_MESSAGES/
+│   ├── xx/LC_MESSAGES/
 ├── requirements.txt    # Python dependencies
-├── build.py            # Build script
 └── README.md           # This file
 ```
 
