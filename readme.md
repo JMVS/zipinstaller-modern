@@ -3,6 +3,9 @@
 ![License](https://img.shields.io/badge/license-GPLv3-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.12-blue.svg)
+![GitHub release](https://img.shields.io/github/v/release/JMVS/zipinstaller-modern)
+![GitHub downloads](https://img.shields.io/github/downloads/JMVS/zipinstaller-modern/total)
+![GitHub stars](https://img.shields.io/github/stars/JMVS/zipinstaller-modern)
 
 A lightweight, modern installer for portable Windows applications distributed as ZIP files. Inspired by NirSoft's ZipInstaller, built with Python and PySide6.
 Supports Windows 10/11.
