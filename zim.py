@@ -6,7 +6,7 @@ A lightweight application installer for Windows that extracts portable applicati
 from ZIP archives and integrates them into the system with shortcuts, registry 
 entries, and proper uninstallation support.
 
-Copyright (C) 2024 VM/Studio
+Copyright (C) 2025 VM/Studio
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
