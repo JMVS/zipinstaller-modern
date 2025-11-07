@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Planned
 - Automatic update checking
 - Support for other archives (7z, rar)
+- Ability to force language
 
 ## [0.9.3] - 2025-11-06
 
