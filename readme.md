@@ -5,6 +5,7 @@
 ![Python](https://img.shields.io/badge/python-3.12-blue.svg)
 
 A lightweight, modern installer for portable Windows applications distributed as ZIP files. Inspired by NirSoft's ZipInstaller, built with Python and PySide6.
+Supports Windows 10/11.
 
 ## 🎯 Features
 
