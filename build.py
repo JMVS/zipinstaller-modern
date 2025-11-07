@@ -46,10 +46,11 @@ def find_python():
 
 def find_pybabel():
     """Find pybabel executable with fallbacks"""
+    user_dir = Path.home()
     # Try to find pybabel in common locations
     pybabel_locations = [
         "pybabel",  # In PATH
-        r"c:\users\josev\appdata\local\programs\python\Python312\Scripts\pybabel.exe",  # Specific location
+        user_dir / "AppData" / "Local" / "Programs" / "Python" / "Python312" / "Scripts" / "pybabel.exe",
         Path(sys.executable).parent / "Scripts" / "pybabel.exe",  # Relative to current Python
     ]
     
@@ -119,18 +120,17 @@ def build():
         "--product-name=ZipInstaller Modern", 
         f"--file-version={version}",
         f"--product-version={version}",
-        "--file-description=Instalador portable de aplicaciones ZIP",
+        "--file-description=Portable Installer for ZIP apps",
         "--windows-icon-from-ico=zim.ico",
         "--assume-yes-for-downloads",
         "--remove-output",
         "--python-flag=no_asserts",
         "--python-flag=no_docstrings",
         # Only include compiled .mo files, exclude source files
-        #"--include-data-files=locales/*/LC_MESSAGES/*.mo=locales/",
         "--include-data-dir=locales=locales",
         "--noinclude-data-files=*.pot,*.po",
         
-        # NEW: Size optimization additions
+        # Size optimization additions
         "--lto=yes",                           # Link Time Optimization
         "--noinclude-setuptools-mode=error",   # Block setuptools bloat
         "--noinclude-pytest-mode=error",       # Block pytest bloat  
@@ -143,8 +143,6 @@ def build():
         "--noinclude-qt-translations",         # Exclude translation files
         
         # Testing
-        #"--static-libpython=yes",        # Static linking (smaller but test compatibility)
-        #"--disable-console",             # Alternative to windows-console-mode
         #"--upx",
         "zim.py"
     ]

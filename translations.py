@@ -11,9 +11,10 @@ from pathlib import Path
 
 def find_pybabel():
     """Find pybabel executable with fallbacks"""
+    user_dir = Path.home()
     pybabel_locations = [
         "pybabel",  # In PATH
-        r"c:\users\josev\appdata\local\programs\python\Python312\Scripts\pybabel.exe",
+        user_dir / "AppData" / "Local" / "Programs" / "Python" / "Python312" / "Scripts" / "pybabel.exe",
         Path(sys.executable).parent / "Scripts" / "pybabel.exe",
     ]
     
